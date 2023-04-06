@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teleinformática 5°6 - Modelo OSI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body id="body">
+    <header class="d-flex">
+
+        <i class="fa-solid fa-wifi fa-3x"></i>
+        <h1>Modelo OSI</h1>
+        <nav id="nav">
+            <ul class="d-flex">
+                <i class="fa-solid fa-wifi fa-2x wifi-nav"></i>
+                <li><a href="#red">Red</a> </li>
+                <li><a href="#trama">Tramas</a></li>
+                <li><a href="#aplicaciones">Aplicaciones</a></li>
+                <i class="fa-solid fa-wifi fa-2x wifi-nav"></i>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-bars fa-2x" id="bars"></i>
+    </header>
+    <main>
+        <div class="container">
+            <h2 class="mt-4 mb-4 text-center" id="red">Capa de Red</h2>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <img src="./imagenes/servidor.jpg" alt="" class="w-100 h-100">
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <p>La capa de Red es la tercera capa en el modelo OSI. Su función principal es enrutar los datos a
+                        través de la red hacia su destino final. Esta capa proporciona servicios de red a las capas
+                        superiores y se comunica con la capa de Enlace de Datos debajo de ella.</p>
+                    <p class="mt-2 mb-2">Algunas de las funciones específicas de la capa de Red incluyen:</p>
+                    <ul>
+                        <li>Encaminamiento: Esta capa determina la mejor ruta para que los datos viajen desde el origen
+                            hasta el destino. Puede haber múltiples rutas posibles, y la capa de Red debe elegir la más
+                            eficiente.</li>
+                        <li>Fragmentación y reensamblaje: La capa de Red puede dividir los datos en paquetes más
+                            pequeños para facilitar su transmisión a través de la red. Luego, estos paquetes se
+                            reensamblan en el destino.</li>
+                        <li>Control de congestión: La capa de Red monitorea la congestión en la red y puede reducir la
+                            cantidad de tráfico que se envía para evitar que la red se sature.</li>
+                        <li>Direccionamiento: Cada dispositivo en la red tiene una dirección IP única que identifica su
+                            ubicación. La capa de Red utiliza estas direcciones para enrutar los datos a través de la
+                            red.</li>
+                    </ul>
+                </div>
+            </div>
+            <h2 class="mt-4 mb-4 text-center" id="trama">Capa de Tramas</h2>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <img src="./imagenes/paquetes.jpg" alt="" class="w-100 h-100">
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <p>La capa de Tramas se encarga de dividir los datos en unidades más pequeñas llamadas tramas o
+                        frames. Estas tramas contienen información de control y de verificación de errores, además de
+                        los datos de usuario. Luego, la capa de Tramas envía estas tramas a través de la red a su
+                        destino final.</p>
+                    <p class="mb-2 mt-2">Algunas de las funciones específicas de la capa de Tramas incluyen:</p>
+                    <ul>
+                        <li>Enmarcado: La capa de Tramas divide los datos de la capa de Red en tramas de tamaño adecuado
+                            para su transmisión a través de la red.</li>
+                        <li>Control de errores: La capa de Tramas proporciona mecanismos para detectar y corregir
+                            errores en las tramas que se transmiten a través de la red.</li>
+                        <li>Control de acceso al medio: La capa de Tramas se encarga de regular el acceso de los
+                            dispositivos a la red y evitar colisiones de datos que puedan afectar el rendimiento.</li>
+                        <li>Direcciones MAC: Cada dispositivo en la red tiene una dirección MAC única que lo identifica.
+                            La capa de Tramas utiliza estas direcciones para entregar las tramas a su destino final.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h2 class="mt-4 mb-4 text-center" id="aplicaciones">Capa de Aplicación</h2>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <img src="./imagenes/aplicacion.png" alt="" class="w-100 h-100">
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <p>Esta capa proporciona servicios a los usuarios finales y a las aplicaciones de software que
+                        utilizan la red. La capa de Aplicación es la capa que interactúa directamente con los usuarios y
+                        las aplicaciones de software.</p>
+                    <p class="mb-2 mt-2">Algunas de las funciones específicas de la capa de Aplicación incluyen:</p>
+                    <ul>
+                        <li>Interfaz con el usuario: La capa de Aplicación proporciona una interfaz para que los
+                            usuarios finales y las aplicaciones de software interactúen con la red.</li>
+                        <li>Procesamiento de datos: La capa de Aplicación es responsable de procesar los datos de
+                            usuario y presentarlos en una forma comprensible para los usuarios finales.</li>
+                        <li>Servicios de red: La capa de Aplicación proporciona servicios de red a las aplicaciones de
+                            software, como la transferencia de archivos, el correo electrónico, la mensajería
+                            instantánea y el acceso a la World Wide Web.
+                        </li>
+                        <li>Protocolos de aplicación: La capa de Aplicación utiliza protocolos de aplicación para
+                            establecer y gestionar las conexiones de red, enviar y recibir datos, y garantizar la
+                            integridad de la información transmitida.</li>
+                    </ul>
+                    <p>Algunos ejemplos de protocolo son:</p>
+                    <ul>
+                        <li>HTTP (Hypertext Transfer Protocol): Se utiliza para transferir datos en la World Wide Web, como páginas web y archivos multimedia.</li>
+                        <li>SMTP (Simple Mail Transfer Protocol): Se utiliza para enviar correo electrónico a través de la red.</li>
+                        <li>FTP (File Transfer Protocol): Se utiliza para transferir archivos entre dispositivos en la red.</li>
+                        <li>DNS (Domain Name System): Se utiliza para resolver nombres de dominio en direcciones IP.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h2 class="text-center">Hecho por Morillo Santiago y Siles Facundo</h2>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
+        integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
