@@ -59,6 +59,7 @@ header {
       header nav ul {
         padding-left: 0;
         margin-left: 10px;
+        margin-top: 2px;
         flex-direction: column; }
         header nav ul .wifi-nav {
           display: block;
